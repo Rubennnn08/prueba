@@ -1,3 +1,5 @@
+/* Resets y estilos generales */
+
 * {
     padding: 0;
     margin: 0;
@@ -15,7 +17,7 @@ a:hover {
 }
 
 body {
-    background:#810366;
+    background:#0B0818;
     color: #fff;
 }
 
@@ -102,7 +104,7 @@ nav ul li {
 }
 
 ul li a {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-family: 'Roboto';
     position: relative;
     font-weight: 600;
@@ -161,7 +163,7 @@ ul li a:hover::after {
 
 .nav-fixed:hover{
     width: 370px;
-    background: linear-gradient(89.91deg, #32fc00d1 0.08%, #c40000 50.87%, #FD6B6B 100%);
+    background: linear-gradient(89.91deg, #4ccdc4d1 0.08%, #4ECDC4 50.87%, #FD6B6B 100%);
 }
 
 .nav-fixed:hover > *{
@@ -827,6 +829,70 @@ ul li a:hover::after {
     cursor: pointer;
 }
 
+
+/* Contacto */
+
+.contact{
+    margin-bottom: 2em;
+}
+
+hr {
+    border: 1px solid white;
+}
+
+.contact__titles {
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto 7em auto;
+}
+
+.contact__titles h2 {
+    font-size: 32px;
+}
+
+.contact__titles img {
+    margin-bottom: 4em;
+}
+
+.contact img {
+    width: 180px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    width: 620px;
+    height: 527px;
+    border-radius: 30px;
+    background: #0B0818;
+}
+
+.contact form input,
+.contact form textarea {
+    background: #344456;
+    border: none;
+}
+
+.contact form input::placeholder,
+.contact form textarea::placeholder {
+    color: #fff;
+}
+
+input {
+    margin: 1.5em 0;
+}
+
+form .btn-alkimia {
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+button[type="submit"] {
+    border: none;
+}
+
 /* Footer */
 
 footer {
@@ -1112,51 +1178,3 @@ footer img:hover {
         width: 40px;
     }
 }
-@keyframes slide {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-  }
-  
-  .logos {
-    overflow: hidden;
-    padding: 60px 0;
-    white-space: nowrap;
-    position: relative;
-  }
-  
-  .logos:before,
-  .logos:after {
-    position: absolute;
-    top: 0;
-    width: 250px;
-    height: 100%;
-    content: "";
-    z-index: 2;
-  }
-  
-  .logos:before {
-    left: 0;
-  }
-  
-  .logos:after {
-    right: 0;
-  }
-  
-  .logos:hover .logos-slide {
-    animation-play-state: paused;
-  }
-  
-  .logos-slide {
-    display: inline-block;
-    animation: 35s slide infinite linear;
-  }
-  
-  .logos-slide img {
-    height: 50px;
-    margin: 0 40px;
-  }
-  
