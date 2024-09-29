@@ -538,7 +538,6 @@ section > h2{
     font-weight: 400;
     font-size: 22px;
     line-height: 113.34%;
-    text-align: center;
     width: 80%;
 }
 
@@ -957,10 +956,6 @@ footer img:hover {
 
     .presentacion__texts{
         min-height: 450px;
-    }
-
-    .nosotros__p{
-        text-align: justify;
     }
 
     .nosotros, .accordion-section, .nuestros-trabajos, .contact{
